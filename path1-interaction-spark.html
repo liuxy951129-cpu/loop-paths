@@ -186,10 +186,8 @@
 <div class="bridge-action">消息发送成功 · 返回QQ</div>
 <div class="bridge-sub">Q宝检测到聊天热度上升</div>
 </div>
-<!-- 钩子4：QQ互动标识 · 续火花提醒 —— 左右分栏布局 -->
-<div class="hook-card-horizontal">
-<!-- 左侧：文字描述区 -->
-<div class="hook-left">
+<!-- 钩子4：QQ互动标识 · 续火花提醒 -->
+<div class="hook-card">
 <span class="hook-label">钩子 4</span>
 <div class="hook-title">QQ互动标识 · 续火花提醒</div>
 <div class="hook-desc">检测聊天热度 · 主动提醒点亮互动标识 · 一键续火 · 关系持续升温</div>
@@ -197,22 +195,21 @@
 <span class="scene-step">增补收口</span>
 <span>用户发完消息后回到QQ，Q宝 检测到互动频率提升 → 主动推荐点亮「畅聊之火」互动标识</span>
 </div>
-</div>
-<!-- 右侧：UI图（手机 mockup） -->
-<div class="hook-right">
 <div class="phone">
 <div class="ph-header">
 <span class="red-dot"></span><span class="icon">≡</span>
 <span class="qbao">Q宝</span><span class="meta">主动推送 · 机会识别</span>
 </div>
 <div class="ph-body" style="padding:14px;">
-<div class="think"><span class="ico">🔥</span><span class="label" style="color:#e84545;">互动机会提醒</span></div>
 <div class="answer">
-<p style="margin-bottom:8px;">消息发送成功！另外 Q宝 注意到你和 <b>张振明</b> 最近互动升温 🔥</p>
-<p style="margin-bottom:12px;">今天已聊 <b>3 次</b>，再坚持聊天 <b>2 天</b> 就能点亮 <b><span style="color:#e84545;">畅聊之火</span></b> 了～</p>
+<p style="margin-bottom:8px;">另外 Q宝 注意到你和 <b>张振明</b> 最近互动升温 🔥</p>
+<p style="margin-bottom:0;">今天已聊 <b>3 次</b>，再坚持聊天 <b>2 天</b> 就能点亮 <b><span style="color:#e84545;">畅聊之火</span></b> 了～</p>
 </div>
+<!-- 白色消息卡片：包裹标识提示 + 续火邀请 -->
+<div class="send-msg-card" style="margin:12px 0 0;">
+<div class="label"><span>QQ互动标识 · 你和张振明</span></div>
 <!-- QQ 互动标识视觉图 - SVG -->
-<svg viewBox="0 0 300 185" style="width:100%;height:auto;border-radius:10px;margin:6px 0 12px;background:#f5f5f7;">
+<svg viewBox="0 0 300 185" style="width:100%;height:auto;border-radius:10px;margin:8px 0 12px;background:#f5f5f7;">
 <defs>
 <linearGradient id="bgActive" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffe5e5"/><stop offset="100%" stop-color="#ffd6d6"/></linearGradient>
 <linearGradient id="bgInactive" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#fafafa"/></linearGradient>
@@ -268,16 +265,12 @@
 <text x="150" y="10" text-anchor="middle" font-size="8" fill="#6b3ff0" font-family="PingFang SC,sans-serif">查看更多互动标识 ›</text>
 </g>
 </svg>
-<div class="send-msg-card" style="margin:10px 0;">
-<div class="label"><span>🔥 续火邀请</span><span>📋</span></div>
-<div class="content">要不要我给张振明发条消息把火花续上？发完这条聊天记录就到 4 天啦，马上点亮标识✨</div>
+<div class="label" style="margin-bottom:8px;"><span>🔥 续火邀请</span><span>📋</span></div>
+<div class="content" style="margin-bottom:12px;">要不要我给张振明发条消息把火花续上？发完这条聊天记录就到 4 天啦，马上点亮标识✨</div>
 <div class="send-btn send-btn-primary">发送给 张振明</div>
 </div>
-<div class="reco-q reco-q-strong reco-q-main" style="margin-top:6px;">🔥 帮我续火花 · 发给张振明</div>
-<div class="reco-q">📊 看看我和张振明还能点亮哪些标识</div>
 </div>
 <div class="ph-input">📖+ 输入你想问的内容<span class="send">▲</span></div>
-</div>
 </div>
 </div>
 <!-- 衔接：钩子4 → 钩子5 -->
@@ -286,10 +279,8 @@
 <div class="bridge-action">点击发送续火</div>
 <div class="bridge-sub">Q宝自动发送续火邀请</div>
 </div>
-<!-- 钩子5：续火成功 —— 左右分栏布局 -->
-<div class="hook-card-horizontal">
-<!-- 左侧：文字描述区 -->
-<div class="hook-left">
+<!-- 钩子5：续火成功 -->
+<div class="hook-card">
 <span class="hook-label">钩子 5</span>
 <div class="hook-title">续火成功 · 进度追踪</div>
 <div class="hook-desc">续火邀请已发出 · 进度可视化 · 次日再次提醒</div>
@@ -297,9 +288,6 @@
 <span class="scene-step">闭环</span>
 <span>用户点击「发送给张振明」→ 续火消息自动发出 → 展示进度条 → 次日再提醒</span>
 </div>
-</div>
-<!-- 右侧：UI图（手机 mockup） -->
-<div class="hook-right">
 <div class="phone">
 <div class="ph-header">
 <span class="red-dot"></span><span class="icon">≡</span>
@@ -308,7 +296,6 @@
 <div class="ph-body" style="padding:14px;">
 <div class="bub-user">帮我续火花 · 发给张振明</div>
 <div class="timestamp">05-27 09:23</div>
-<div class="think"><span class="ico">🔥</span><span class="label" style="color:#e84545;">续火已发出</span></div>
 <div class="send-msg-card">
 <div class="label"><span>消息</span><span>📋</span></div>
 <div class="content">突然发现咱俩今天聊得挺多～再聊两天是不是能点亮那个🔥畅聊之火了 😄</div>
@@ -335,7 +322,6 @@
 <div class="reco-q">🔔 给我开个每日续火提醒</div>
 </div>
 <div class="ph-input">📖+ 输入你想问的内容<span class="send">▲</span></div>
-</div>
 </div>
 </div>
 
