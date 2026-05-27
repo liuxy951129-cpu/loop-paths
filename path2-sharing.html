@@ -21,13 +21,13 @@
 <div class="flow">
 <div class="flow-step">分析好友/关系</div>
 <div class="flow-arrow">›</div>
-<div class="flow-step">段子化输出</div>
+<div class="flow-step">段子化结果</div>
 <div class="flow-arrow">›</div>
-<div class="flow-step">生成分享图</div>
+<div class="flow-step">精美分享图</div>
 <div class="flow-arrow">›</div>
-<div class="flow-step">被分享者落地</div>
+<div class="flow-step">QQ 转发好友</div>
 <div class="flow-arrow">›</div>
-<div class="flow-step">测完承接</div>
+<div class="flow-step">扫码落地+承接</div>
 </div>
 <div class="hooks-row">
 <div class="hook-card">
@@ -72,36 +72,34 @@
 </div>
 <div class="hook-card">
 <span class="hook-label">钩子 2</span>
-<div class="hook-title">生成分享图 modal（沿用现有交互）</div>
-<div class="hook-desc">底部「取消 / 复制图片 / 下载图片」三按钮</div>
+<div class="hook-title">分享图 modal · 暖心钩子文案</div>
+<div class="hook-desc">精美渐变长图 + 心理测试式诱导文案 + 紫色\"转发好友\"主按钮</div>
+<div class="scene-bar">
+<span class="scene-step">接续</span>
+<span>用户被段子化结果打动 → 点「🖼️ 生成分享图」→ 弹出精美海报 modal</span>
+</div>
 <div class="phone" style="background:#f7f7f9;">
 <div class="ph-header">
 <span class="red-dot"></span><span class="icon">≡</span>
 <span class="qbao">Q宝</span><span class="meta">该对话仅自己可见</span>
 </div>
 <div class="modal-overlay">
-<div class="modal-card">
-<div class="mc-head">
-<div class="qicon">Q</div>
-<div>
-<div class="mc-name">Q宝</div>
-<div class="mc-time">2026-05-26 17:20</div>
+<div class="modal-card" style="padding:14px;">
+<div style="font-size:12px;font-weight:600;text-align:center;margin-bottom:10px;color:#1d1d1f;">分享给 Chadwick 看看？</div>
+<!-- 精美渐变海报 -->
+<div style="background:linear-gradient(160deg,#a78bfa 0%,#ec4899 100%);border-radius:14px;padding:22px 18px;color:#fff;text-align:center;">
+<div style="font-size:11px;opacity:0.85;">小刘 → Chadwick</div>
+<div style="font-size:18px;font-weight:700;margin:10px 0;line-height:1.4;">"松弛感搭子 × 带薪闲聊CP"</div>
+<div style="font-size:11px;opacity:0.9;line-height:1.7;margin-bottom:10px;">"嘴上互损 × 心里惦记型搭子"<br/>表面松弛随意，实则互动超有默契</div>
+<div style="background:rgba(255,255,255,0.22);border-radius:10px;padding:10px;margin:10px 0;font-size:11.5px;line-height:1.55;font-style:italic;">
+✨ 你们竟然还有<br/>这些暖心时刻……<br/><b>扫码揭秘 →</b>
 </div>
+<div style="margin-top:6px;padding:7px;background:rgba(255,255,255,0.18);border-radius:8px;font-size:10px;">▦ 扫码 反过来测测小刘</div>
 </div>
-<div style="padding:10px 0;">
-<div class="bub-user" style="margin:6px 0 10px auto;">我和'Chadwick是什么关系呀</div>
-<div class="think" style="margin-bottom:6px;"><span class="ico">✨</span><span class="label">已思考</span><span class="meta">(用时 6秒)</span></div>
-<div class="answer" style="font-size:11px;line-height:1.6;">
-<p>Q宝翻了翻你和 <b>'Chadwick</b> 的聊天记录，发现你们刚认识半个月，但聊得也太好了吧！</p>
-<span class="label-tag" style="font-size:11px;">关系标签：<span class="accent">松弛感搭子 × 带薪闲聊CP</span></span>
-<p style="margin-top:6px;font-size:10.5px;color:#666;">📈 偷偷说几个细节～</p>
-<p style="font-size:10.5px;">你们 4月28日 刚加好友，私聊密度超高...</p>
-</div>
-</div>
-<div class="modal-actions">
-<button>取消</button>
-<button>复制图片</button>
-<button class="btn-primary">下载图片</button>
+<!-- 底部按钮：仅 下载图片 + 转发好友 -->
+<div style="display:flex;gap:8px;margin-top:12px;">
+<button style="flex:1;background:#f0f0f3;color:#666;border:none;border-radius:14px;padding:9px;font-size:12px;font-weight:500;">📥 下载图片</button>
+<button style="flex:1.2;background:#6b3ff0;color:#fff;border:none;border-radius:14px;padding:9px;font-size:12px;font-weight:600;box-shadow:0 2px 6px rgba(107,63,240,0.3);">↗ 转发好友</button>
 </div>
 </div>
 </div>
@@ -110,20 +108,73 @@
 <!-- 衔接：钩子2 → 钩子3 -->
 <div class="hook-bridge">
 <div class="bridge-arrow">›</div>
-<div class="bridge-action">发到 QQ 群/对话</div>
-<div class="bridge-sub">旁支：保存到本地后去其他平台分享</div>
+<div class="bridge-action">点「转发好友」</div>
+<div class="bridge-sub">旁支：下载到本地去其他平台</div>
 </div>
 <div class="hook-card">
 <span class="hook-label">钩子 3</span>
-<div class="hook-title">被分享者落地 = 拉新冷启动</div>
-<div class="hook-desc">分享图水印 + 二维码 → 反向复刻测评</div>
-<div class="scene-bar">
-<span class="scene-step">收口</span>
-<span>分享图发到 QQ 群/对话 → 被分享者点开 → 拉新落地页</span>
-</div>
+<div class="hook-title">QQ 聊天界面 · 用户转发给好友</div>
+<div class="hook-desc">海报作为图片消息发送到 QQ 对话 · 真实裂变载体</div>
 <div class="scene-bar">
 <span class="scene-step">接续</span>
-<span>关系结果太有梗，点击底部「🖼️ 生成分享图」→ 弹出 modal</span>
+<span>用户从 modal 转发到 QQ → 在和 Chadwick 的聊天框里发出 → 好友看到</span>
+</div>
+<!-- QQ 聊天页样式：浅蓝灰背景 + 时间分隔 + 用户气泡（右）+ 图片消息 -->
+<div class="phone" style="background:#ebeef2;">
+<div class="ph-header" style="background:#ebeef2;border-bottom:1px solid #d8dde3;">
+<span style="font-size:14px;color:#666;">‹</span>
+<span class="qbao" style="font-size:14px;color:#1d1d1f;font-weight:500;">Chadwick</span>
+<span style="margin-left:auto;font-size:14px;color:#666;">⋯</span>
+</div>
+<div class="ph-body" style="background:#ebeef2;padding:14px 12px;">
+<!-- 时间戳 -->
+<div style="text-align:center;font-size:10px;color:#999;margin-bottom:14px;">下午 17:25</div>
+<!-- 对方气泡 -->
+<div style="display:flex;gap:6px;align-items:flex-end;margin-bottom:12px;">
+<div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#7dd3fc,#a78bfa);flex-shrink:0;"></div>
+<div style="background:#fff;border-radius:4px 14px 14px 14px;padding:8px 11px;font-size:12.5px;color:#1d1d1f;max-width:200px;">
+最近怎么样啊
+</div>
+</div>
+<!-- 用户气泡（右）-->
+<div style="display:flex;justify-content:flex-end;margin-bottom:8px;">
+<div style="background:#95ec69;border-radius:14px 4px 14px 14px;padding:8px 11px;font-size:12.5px;color:#1d1d1f;max-width:200px;">
+哈哈我刚让 Q宝 给咱俩测了下，笑死
+</div>
+</div>
+<!-- 用户发的海报（图片消息）-->
+<div style="display:flex;justify-content:flex-end;margin-bottom:8px;">
+<div style="border-radius:10px;overflow:hidden;background:linear-gradient(160deg,#a78bfa 0%,#ec4899 100%);padding:16px 14px;color:#fff;text-align:center;width:200px;">
+<div style="font-size:9.5px;opacity:0.85;">小刘 → Chadwick</div>
+<div style="font-size:14px;font-weight:700;margin:6px 0;line-height:1.4;">"松弛感搭子<br/>× 带薪闲聊CP"</div>
+<div style="font-size:9.5px;opacity:0.9;line-height:1.6;">"嘴上互损 × 心里惦记型搭子"</div>
+<div style="background:rgba(255,255,255,0.22);border-radius:7px;padding:6px;margin:8px 0 4px;font-size:9.5px;font-style:italic;">
+✨ 你们竟然还有<br/>这些暖心时刻……<br/><b>扫码揭秘 →</b>
+</div>
+<div style="background:rgba(255,255,255,0.18);border-radius:5px;padding:4px;font-size:8.5px;">▦ 扫码反测小刘</div>
+</div>
+</div>
+<!-- 状态 -->
+<div style="text-align:right;font-size:10px;color:#999;">已送达</div>
+</div>
+<div class="ph-input" style="background:#ebeef2;">
+<span style="color:#999;">😊 发消息或按住说话 🎤</span>
+</div>
+</div>
+</div>
+<!-- 衔接：钩子3 → 钩子4 -->
+<div class="hook-bridge">
+<div class="bridge-arrow">›</div>
+<div class="bridge-action">好友扫码进 Q宝</div>
+<div class="bridge-sub">从聊天图片二维码进入</div>
+</div>
+<div class="hook-card">
+<span class="hook-label">钩子 4</span>
+<div class="hook-title">被分享者落地 · 看小刘的测试结果</div>
+<div class="hook-desc">扫码后进 Q宝 看到完整分析 + 引导反向测评</div>
+<div class="scene-bar">
+<span class="scene-step">收口</span>
+<span>Chadwick 扫码进 Q宝 → 看到完整测评内容 → 推荐反向测试 / 测其他 CP</span>
 </div>
 <div class="phone">
 <div class="ph-header">
@@ -132,15 +183,21 @@
 </div>
 <div class="ph-body">
 <div class="answer">
-<p>👋 <b>小刘</b> 用 Q宝 测了你～想看看在 Q宝 眼里你是什么样吗？</p>
+<p>👋 <b>小刘</b> 用 Q宝 测了你们的关系——</p>
+<p style="font-size:11.5px;color:#888;margin-top:4px;">扫码进来看看在 Q宝 眼里你是什么样吧～</p>
 </div>
-<div style="background:linear-gradient(160deg,#a78bfa 0%,#ec4899 100%);border-radius:14px;padding:20px;color:#fff;text-align:center;margin:10px 0;">
+<!-- 还原海报 -->
+<div style="background:linear-gradient(160deg,#a78bfa 0%,#ec4899 100%);border-radius:14px;padding:18px;color:#fff;text-align:center;margin:10px 0;">
 <div style="font-size:11px;opacity:0.85;">小刘 → Chadwick</div>
-<div style="font-size:20px;font-weight:700;margin:8px 0;">"松弛感搭子 × 带薪闲聊CP"</div>
+<div style="font-size:18px;font-weight:700;margin:8px 0;line-height:1.4;">"松弛感搭子 × 带薪闲聊CP"</div>
 <div style="font-size:11px;opacity:0.9;line-height:1.6;">"嘴上互损 × 心里惦记型搭子"<br/>表面松弛随意，实则互动超有默契</div>
-<div style="margin-top:14px;padding:8px;background:rgba(255,255,255,0.18);border-radius:8px;font-size:10px;">▦ 扫码反过来测测小刘</div>
 </div>
-<div class="reco-q reco-q-strong">🪞 也测测小刘 →</div>
+<div class="evidence evidence-cta" style="margin-top:8px;">
+<b>📊 完整测评已为你解锁</b><br/>
+<span style="font-size:11px;color:#666;">含暖心时刻 / 默契指数 / 互动梗图...</span>
+</div>
+<div class="reco-q reco-q-strong reco-q-main">⭐ 测测我和小刘的星座匹配度</div>
+<div class="reco-q reco-q-strong">💞 测测我和其他好友是什么 CP</div>
 <div class="reco-q">📊 看完整分析</div>
 </div>
 <div class="ph-input">📖+ 输入你想问的内容<span class="send">▲</span></div>
