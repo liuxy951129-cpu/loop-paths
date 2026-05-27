@@ -50,11 +50,11 @@ h1 { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
 
 /* 钩子卡横排（无栅格限制，flex 自适应） */
 .hooks-row {
-  display: flex; align-items: stretch; gap: 0;
+  display: flex; flex-wrap: nowrap; align-items: stretch; gap: 0;
   overflow-x: auto; padding-bottom: 12px;
 }
 .hook-card {
-  flex: 0 0 360px;
+  flex: 0 0 360px; min-width: 0;
   background: #fafafa; border-radius: 14px; padding: 16px;
   border: 1px solid #ececec;
 }
