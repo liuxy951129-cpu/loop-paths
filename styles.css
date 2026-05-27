@@ -501,3 +501,32 @@ h1 { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
 .branch-tab:hover:not(.active) { color: #6b3ff0; }
 .branch-view { display: none; }
 .branch-view.active { display: block; }
+
+/* 左右分栏 hook-card（文字左 + UI图右） */
+.hook-card-horizontal {
+  flex: 0 0 780px; min-width: 780px;
+  background: #fff8e7; border-radius: 14px; padding: 16px;
+  border: 1px solid #ffe0a0;
+  display: flex; gap: 0; align-items: stretch;
+}
+.hook-card-horizontal .hook-left {
+  flex: 0 0 320px; min-width: 0;
+  display: flex; flex-direction: column;
+  padding-right: 14px;
+  border-right: 1px dashed #ffe0a0;
+}
+.hook-card-horizontal .hook-left .hook-desc {
+  flex: 1;
+}
+.hook-card-horizontal .hook-right {
+  flex: 1; min-width: 0;
+  padding-left: 14px;
+  display: flex; flex-direction: column;
+}
+.hook-card-horizontal .phone {
+  flex: 1;
+}
+/* 横向 hook-card 内的 branch-tabs */
+.hook-card-horizontal .branch-tabs {
+  flex-shrink: 0;
+}
