@@ -269,6 +269,7 @@
 <div class="content" style="margin-bottom:12px;">要不要我给张振明发条消息把火花续上？发完这条聊天记录就到 4 天啦，马上点亮标识✨</div>
 <div class="send-btn send-btn-primary">发送给 张振明</div>
 </div>
+<div class="reco-q">🔔 给我开个每日续火提醒</div>
 </div>
 <div class="ph-input">📖+ 输入你想问的内容<span class="send">▲</span></div>
 </div>
@@ -289,39 +290,62 @@
 <span>用户点击「发送给张振明」→ 续火消息自动发出 → 展示进度条 → 次日再提醒</span>
 </div>
 <div class="phone">
-<div class="ph-header">
-<span class="red-dot"></span><span class="icon">≡</span>
-<span class="qbao">Q宝</span><span class="meta">续火完成</span>
+<!-- QQ 好友聊天界面头部 -->
+<div class="ph-header" style="justify-content:space-between;padding:0 12px;">
+<span style="font-size:15px;color:#1d1d1f;">‹ <b>张振明</b></span>
+<span style="font-size:14px;color:#888;">···</span>
 </div>
-<div class="ph-body" style="padding:14px;">
-<div class="bub-user">帮我续火花 · 发给张振明</div>
-<div class="timestamp">05-27 09:23</div>
-<div class="send-msg-card">
-<div class="label"><span>消息</span><span>📋</span></div>
-<div class="content">突然发现咱俩今天聊得挺多～再聊两天是不是能点亮那个🔥畅聊之火了 😄</div>
-<div class="send-btn send-btn-primary" style="background:#34c759;border-color:#34c759;">✅ 已发送 · 等待回复</div>
+<!-- QQ 聊天界面 -->
+<div class="ph-body" style="padding:14px;background:#f0f0f3;">
+<!-- 时间戳 -->
+<div class="timestamp" style="text-align:center;margin-bottom:12px;">下午 17:25</div>
+<!-- 对方消息气泡 -->
+<div style="display:flex;align-items:flex-start;margin-bottom:14px;">
+<div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#667eea,#764ba2);flex-shrink:0;margin-right:8px;"></div>
+<div style="background:#fff;border-radius:14px 14px 14px 4px;padding:10px 14px;max-width:200px;font-size:13px;color:#1d1d1f;line-height:1.5;">最近怎么样啊</div>
 </div>
-<!-- 续火进度视觉图 - SVG -->
-<svg viewBox="0 0 300 95" style="width:100%;height:auto;border-radius:10px;margin:10px 0;">
+<!-- 自己消息气泡 -->
+<div style="display:flex;justify-content:flex-end;margin-bottom:14px;">
+<div style="background:#95ec69;border-radius:14px 14px 4px 14px;padding:10px 14px;max-width:220px;font-size:13px;color:#1d1d1f;line-height:1.5;">哈哈我刚让 Q宝 给咱俩测了下，笑死</div>
+</div>
+<!-- 紫色渐变特殊卡片：续火花提醒 -->
+<div style="display:flex;justify-content:flex-end;margin-bottom:14px;">
+<div style="width:260px;border-radius:16px;overflow:hidden;background:linear-gradient(180deg,#a78bfa,#ec4899);padding:16px;color:#fff;text-align:center;">
+<!-- 关系标识 icon -->
+<div style="margin-bottom:10px;">
+<svg viewBox="0 0 80 60" style="width:80px;height:60px;margin:0 auto;">
 <defs>
-<linearGradient id="greenBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#e8f8e8"/><stop offset="100%" stop-color="#d4f5d4"/></linearGradient>
-<linearGradient id="fireGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff8844"/><stop offset="100%" stop-color="#ff4444"/></linearGradient>
+<linearGradient id="sparkGrad" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#ff6b9d"/>
+<stop offset="100%" stop-color="#c44569"/>
+</linearGradient>
 </defs>
-<rect x="0" y="0" width="300" height="95" rx="10" fill="url(#greenBg)" stroke="#b8e6b8" stroke-width="0.5"/>
-<circle cx="40" cy="38" r="22" fill="url(#fireGlow)" opacity="0.9"/>
-<text x="40" y="44" text-anchor="middle" font-size="22">🔥</text>
-<text x="155" y="30" text-anchor="middle" font-size="14" font-weight="600" fill="#1d7035" font-family="PingFang SC,sans-serif">距离点亮「畅聊之火」还有 1 天</text>
-<text x="155" y="48" text-anchor="middle" font-size="10" fill="#888" font-family="PingFang SC,sans-serif">对方回复后 · 明天再聊一句即可点亮 ✨</text>
-<rect x="30" y="62" width="240" height="6" rx="3" fill="#c8e6c9"/>
-<rect x="30" y="62" width="160" height="6" rx="3" fill="#43a047"/>
-<text x="270" y="67" text-anchor="end" font-size="8" fill="#43a047" font-weight="600" font-family="PingFang SC,sans-serif">3/4天</text>
+<ellipse cx="40" cy="28" rx="26" ry="22" fill="url(#sparkGrad)" opacity="0.9"/>
+<text x="40" y="24" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">🔥</text>
+<text x="40" y="40" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">80</text>
 </svg>
-<div class="evidence evidence-hi">
-💡 明天Q宝会再提醒你和张振明续一句话～每次多聊一句，标识就多点亮一个
+<div style="font-size:11px;color:#ffe4e6;margin-top:2px;">聊得燚燚 xN</div>
+<div style="font-size:9px;color:#fbcfe8;">已点亮1000天</div>
 </div>
-<div class="reco-q">🔔 给我开个每日续火提醒</div>
+<!-- 标题 -->
+<div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.4;">还差1天点亮"聊得燚燚"！<br>仅有0.01%的人拥有</div>
+<!-- 小字 -->
+<div style="font-size:11px;color:#fce7f3;margin-bottom:14px;line-height:1.5;">Q宝提醒你再聊一天，畅聊之火就能变身~</div>
+<!-- 底部按钮 -->
+<div style="background:rgba(255,255,255,0.25);border-radius:20px;padding:8px 0;font-size:13px;font-weight:600;color:#fff;backdrop-filter:blur(4px);">一键续火花</div>
 </div>
-<div class="ph-input">📖+ 输入你想问的内容<span class="send">▲</span></div>
+</div>
+<!-- 对方回复气泡 -->
+<div style="display:flex;align-items:flex-start;margin-bottom:8px;">
+<div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#667eea,#764ba2);flex-shrink:0;margin-right:8px;"></div>
+<div style="background:#fff;border-radius:14px 14px 14px 4px;padding:10px 14px;max-width:160px;font-size:13px;color:#1d1d1f;line-height:1.5;">收到收到~</div>
+</div>
+<!-- 已送达 -->
+<div style="text-align:right;font-size:10px;color:#aaa;margin-right:4px;">已送达</div>
+</div>
+<!-- 底部输入框 -->
+<div class="ph-input" style="background:#f7f7f7;border-top:1px solid #e0e0e0;">
+<span style="font-size:16px;margin-right:4px;">😊</span>发消息或按住说话<span style="font-size:14px;margin-left:4px;">🎤</span>
 </div>
 </div>
 
