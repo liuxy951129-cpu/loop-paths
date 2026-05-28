@@ -28,6 +28,10 @@
 <div class="flow-step">邀请代发</div>
 <div class="flow-arrow">›</div>
 <div class="flow-step">关系账本沉淀</div>
+<div class="flow-arrow">›</div>
+<div class="flow-step">AI助手建群</div>
+<div class="flow-arrow">›</div>
+<div class="flow-step">群聊三方互动</div>
 </div>
 
 <div class="hooks-row">
@@ -276,6 +280,129 @@
 <div class="reco-q">📊 看本月关系热度榜</div>
 </div>
 <div class="ph-input">📖+ 输入你想问的内容<span class="send">▲</span></div>
+</div>
+</div>
+
+<div class="hook-bridge">
+<div class="bridge-arrow">›</div>
+<div class="bridge-action">账本沉淀完成</div>
+<div class="bridge-sub">Q宝识别到高亲密度 → 推荐建专属群</div>
+</div>
+
+<!-- 钩子4：AI社交助手 · 建群推荐 -->
+<div class="hook-card">
+<span class="hook-label">钩子 4</span>
+<div class="hook-title">AI 社交助手「搭搭」· 建群推荐</div>
+<div class="hook-desc">派个小弟进群帮你维系关系</div>
+<div class="scene-bar">
+<span class="scene-step">增补</span>
+<span>关系账本写入后，Q宝 主动推送建群卡片 → 邀请 AI 助手入群托管</span>
+</div>
+<div class="phone">
+<div class="ph-header">
+<span class="red-dot"></span><span class="icon">≡</span>
+<span class="qbao">Q宝</span><span class="meta">主动推送 · 关系增强</span>
+</div>
+<div class="ph-body">
+<div class="think"><span class="ico">🤖</span><span class="label" style="color:#6b3ff0;">搭搭 · AI社交助手</span></div>
+<div class="answer">
+<p>你和张三最近互动不少，Q宝 想给你俩派个<b>专属社交小助手</b>——</p>
+</div>
+<!-- 建群推荐卡片 -->
+<div class="send-msg-card" style="margin:10px 0 0;">
+<div class="label"><span>🤖 推荐建群</span><span>✨</span></div>
+<!-- 群成员预览 -->
+<div style="background:linear-gradient(135deg,#f0ebff,#fff0f5);border-radius:10px;padding:14px;margin-bottom:12px;">
+<div style="display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:10px;">
+<div style="text-align:center;">
+<div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#667eea,#764ba2);margin:0 auto 3px;display:flex;align-items:center;justify-content:center;font-size:16px;">😎</div>
+<div style="font-size:9.5px;color:#666;">你</div>
+</div>
+<div style="font-size:14px;color:#bbb;">×</div>
+<div style="text-align:center;">
+<div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#a78bfa,#6366f1);margin:0 auto 3px;display:flex;align-items:center;justify-content:center;font-size:18px;">🤖</div>
+<div style="font-size:9.5px;color:#6b3ff0;font-weight:600;">搭搭</div>
+</div>
+<div style="font-size:14px;color:#bbb;">×</div>
+<div style="text-align:center;">
+<div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#c5b0ff,#a78bfa);margin:0 auto 3px;display:flex;align-items:center;justify-content:center;font-size:16px;">🐉</div>
+<div style="font-size:9.5px;color:#666;">张三</div>
+</div>
+</div>
+<div style="font-size:12px;font-weight:600;color:#5b21b6;text-align:center;margin-bottom:6px;">群名：搭搭的社交小站</div>
+<div style="font-size:10.5px;color:#888;text-align:center;line-height:1.5;">搭搭会帮你们记录关系回忆、推荐一起做的事<br>还能插科打诨活跃气氛～</div>
+</div>
+<div class="send-btn send-btn-primary" style="font-size:13px;">建群并邀请 张三 加入</div>
+</div>
+</div>
+<div class="ph-input">📖+ 输入你想问的内容<span class="send">▲</span></div>
+</div>
+</div>
+
+<div class="hook-bridge">
+<div class="bridge-arrow">›</div>
+<div class="bridge-action">点击建群</div>
+<div class="bridge-sub">搭搭自动入群 · 张三收到邀请</div>
+</div>
+
+<!-- 钩子5：群聊生效 · 搭搭入群 -->
+<div class="hook-card">
+<span class="hook-label">钩子 5</span>
+<div class="hook-title">群聊生效 · 搭搭入群互动</div>
+<div class="hook-desc">3人群聊 · AI助手实时参与话题</div>
+<div class="scene-bar">
+<span class="scene-step">闭环</span>
+<span>建群成功 → 搭加入群 → 三方互动（旅游话题 → @搭搭做计划）</span>
+</div>
+<div class="phone">
+<!-- 群聊头部 -->
+<div class="ph-header" style="justify-content:space-between;padding:0 12px;">
+<span style="font-size:15px;color:#1d1d1f;">‹ <b>搭搭的社交小站</b><span style="font-size:11px;color:#999;font-weight:400;">(3)</span></span>
+<span style="font-size:14px;color:#888;">···</span>
+</div>
+<!-- 群聊界面 -->
+<div class="ph-body" style="padding:14px;background:#f0f0f3;">
+<!-- 系统消息 -->
+<div style="text-align:center;font-size:11px;color:#999;margin-bottom:12px;">你邀请了 搭搭 和 张三 加入群聊</div>
+<!-- 张三消息 -->
+<div style="display:flex;align-items:flex-start;margin-bottom:12px;">
+<div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#c5b0ff,#a78bfa);flex-shrink:0;margin-right:8px;display:flex;align-items:center;justify-content:center;font-size:14px;">🐉</div>
+<div>
+<div style="font-size:10px;color:#999;margin-bottom:2px;margin-left:2px;">张三</div>
+<div style="background:#fff;border-radius:14px 14px 14px 4px;padding:9px 13px;max-width:210px;font-size:13px;color:#1d1d1f;line-height:1.5;">暑假有什么打算吗？我想去云南玩一趟</div>
+</div>
+</div>
+<!-- 我的消息 -->
+<div style="display:flex;justify-content:flex-end;margin-bottom:12px;">
+<div style="background:#95ec69;border-radius:14px 14px 4px 14px;padding:9px 13px;max-width:220px;font-size:13px;color:#1d1d1f;line-height:1.5;">云南好啊！大理还是丽江？要不咱俩做个攻略</div>
+</div>
+<!-- 张三消息 -->
+<div style="display:flex;align-items:flex-start;margin-bottom:12px;">
+<div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#c5b0ff,#a78bfa);flex-shrink:0;margin-right:8px;display:flex;align-items:center;justify-content:center;font-size:14px;">🐉</div>
+<div>
+<div style="font-size:10px;color:#999;margin-bottom:2px;margin-left:2px;">张三</div>
+<div style="background:#fff;border-radius:14px 14px 14px 4px;padding:9px 13px;max-width:210px;font-size:13px;color:#1d1d1f;line-height:1.5;">都行，你定吧哈哈，我负责吃喝就行 🍜</div>
+</div>
+</div>
+<!-- 我 @搭搭 -->
+<div style="display:flex;justify-content:flex-end;margin-bottom:12px;">
+<div style="background:#95ec69;border-radius:14px 14px 4px 14px;padding:9px 13px;max-width:230px;font-size:13px;color:#1d1d1f;line-height:1.5;"><span style="color:#6b3ff0;font-weight:500;">@搭搭</span> 帮我俩做个云南5日游计划呗，大理+丽江</div>
+</div>
+<!-- 搭搭回复 -->
+<div style="display:flex;align-items:flex-start;margin-bottom:12px;">
+<div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#a78bfa,#6366f1);flex-shrink:0;margin-right:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">🤖</div>
+<div>
+<div style="font-size:10px;color:#6b3ff0;margin-bottom:2px;margin-left:2px;font-weight:500;">搭搭</div>
+<div style="background:linear-gradient(135deg,#f5f0ff,#ede5ff);border:1px solid #ddd6fe;border-radius:14px 14px 14px 4px;padding:10px 13px;max-width:240px;font-size:13px;color:#1d1d1f;line-height:1.5;">收到！根据你俩的喜好（你爱拍照 + 张三是吃货），搭搭拟了个方案～<br><br><span style="font-size:11px;color:#6b3ff0;">📜「大理丽江5日游」</span><br>Day1 大理古城 · 环洱海<br>Day2 喜洲古镇 · 扎染体验<br>Day3 丽江古城 · 束河古镇<br>Day4 玉龙雪山<br>Day5 返程 · 带伴手礼<br><br>每天人均预算 <b>¥350</b>，要我把详细行程发群里不？✨</div>
+</div>
+</div>
+<!-- 已送达 -->
+<div style="text-align:right;font-size:10px;color:#aaa;margin-right:4px;">已送达</div>
+</div>
+<!-- 群聊底部输入框 -->
+<div class="ph-input" style="background:#f7f7f7;border-top:1px solid #e0e0e0;">
+<span style="font-size:16px;margin-right:4px;">😊</span>发消息或按住说话<span style="font-size:14px;margin-left:4px;">🎤</span>
+</div>
 </div>
 </div>
 
